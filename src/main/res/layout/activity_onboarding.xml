@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/onboarding_activity_vertical_margin"
+    android:paddingLeft="@dimen/onboarding_activity_horizontal_margin"
+    android:paddingRight="@dimen/onboarding_activity_horizontal_margin"
+    android:paddingTop="@dimen/onboarding_activity_vertical_margin"
+    tools:context="com.vperi.onboarder.OnboardingActivity">
+
+    <ImageView android:id="@+id/onboarding_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/onboarding_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/onboarding_viewpager"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+        <com.github.jrejaud.viewpagerindicator2.CirclePageIndicator
+            android:id="@+id/onboadring_page_indicator"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:strokeWidth="1dp"
+            app:radius="5dp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vperi.onboarder.OnboardingFragment">
+
+    <TextView
+        android:id="@+id/onboarding_fragment_title"
+        android:text="Fragment Title"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:lineSpacingExtra="5sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/onboarding_fragment_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:scaleType="centerInside" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/onboarding_fragment_body_text"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:text="Fragment Body Text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:lineSpacingExtra="5sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:theme="@style/OnboardingButton"
+        android:id="@+id/onboarding_fragment_button"
+        android:text="Fragment Button Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
